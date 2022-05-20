@@ -1,8 +1,6 @@
-package socketprogramming;
+import java.net.*;
 
-import java.net.*; 
-
-class UDPServer { 
+class UDPServer {
 	public static void main(String args[]) throws Exception 
 	{ 
 
@@ -32,14 +30,10 @@ class UDPServer {
 
 			sendData = capitalizedSentence.getBytes(); 
 
-			DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, IPAddress, port); 
-                        
-                        
+			DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, IPAddress, port);
+
 			serverSocket.send(sendPacket); 
 			//serverSocket.close();
-			
-		} 
-		
-		
+		}
 	} 
 }  
