@@ -18,13 +18,17 @@ public class Server {
 
         System.out.println("Server connected");
 
-        String request = in.readLine(); //Recieve action request
+        String request = in.readLine(); //Receive action request
 
-        if(request.equals("1")) {
-            out.println("Serving Action 1");
-        }
-        else if(request.equals("2")) {
-            out.println("Serving Action 2");
+        while (!request.equals("0")) {
+            if(request.equals("1")) {
+                System.out.println("Serving Action 1");
+                request = "5";
+            }
+            else if(request.equals("2")) {
+                System.out.println("Serving Action 2");
+                request = "5";
+            }
         }
     }
 
