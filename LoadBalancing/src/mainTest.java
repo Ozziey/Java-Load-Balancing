@@ -1,8 +1,6 @@
-import java.io.*;
-import java.net.*;
+import java.io.IOException;
 
-public class client {
+public class mainTest {
     public static void main(String[] args) throws IOException {
-
     }
 }

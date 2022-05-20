@@ -9,15 +9,11 @@ class UDPServer {
 		byte[] sendData  = new byte[1024]; 
 
 		while(true) 
-		{ 
-
+		{
 			System.out.println("UDP Server is running...");
 			DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length); 
-			
-                        
-                        
+
 			serverSocket.receive(receivePacket); 
-			
 
 			String sentence = new String(receivePacket.getData()); 
 
